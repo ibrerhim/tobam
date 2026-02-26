@@ -11,7 +11,7 @@ import { useTaskDnd } from "@/components/kanban/use-task-dnd";
 import type { Theme } from "@/components/kanban/types";
 
 export default function Page() {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("light");
   const [menuOpen, setMenuOpen] = useState(false);
   const { board, totalTasks, statusCounts, doneRatio, addTask, advanceTask, moveTask } = useBoardState();
 
