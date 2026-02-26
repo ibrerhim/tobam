@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f3f4f7;
+  --bg-soft: #ffffff;
+  --bg-panel: #f8f8fb;
+  --bg-card: #ffffff;
+  --text-primary: #25262c;
+  --text-secondary: #8b8d97;
+  --border: #e5e7ec;
+  --rail: #151821;
+  --sidebar: #f9f9fb;
+  --sidebar-border: #e7e8ec;
+  --sidebar-strong: #25262c;
+  --sidebar-muted: #8f919a;
+  --sidebar-line: #e7e8ec;
+  --sidebar-pill-bg: #ececef;
+  --sidebar-pill-text: #2a2b31;
+  --sidebar-toggle-bg: #e9eaee;
+  --sidebar-toggle-active-bg: #ffffff;
+  --sidebar-toggle-active-text: #2a2b31;
+  --sidebar-toggle-inactive: #9a9ca4;
+  --accent: #4d66ff;
+  --success: #61c31a;
+  --warning: #f4a641;
+  --danger: #ff6d74;
+  --rail-icon: #8f94a5;
+  --rail-icon-strong: #f0f3f8;
+  --rail-icon-hover: #d1d4de;
+}
+
+.dark {
+  --bg: #222326;
+  --bg-soft: #292b2f;
+  --bg-panel: #24262a;
+  --bg-card: #2b2d31;
+  --text-primary: #f1f2f4;
+  --text-secondary: #a5a7ad;
+  --border: #3a3d43;
+  --rail: #1a1c20;
+  --sidebar: #25272b;
+  --sidebar-border: #3a3d43;
+  --sidebar-strong: #f1f2f4;
+  --sidebar-muted: #a5a7ad;
+  --sidebar-line: #3a3d43;
+  --sidebar-pill-bg: #32353b;
+  --sidebar-pill-text: #f1f2f4;
+  --sidebar-toggle-bg: #32353b;
+  --sidebar-toggle-active-bg: #f1f2f4;
+  --sidebar-toggle-active-text: #26282c;
+  --sidebar-toggle-inactive: #a5a7ad;
+  --accent: #4d66ff;
+  --success: #74d624;
+  --warning: #f3a544;
+  --danger: #ff6d74;
+  --rail-icon: #8f94a5;
+  --rail-icon-strong: #f0f3f8;
+  --rail-icon-hover: #d1d4de;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.07), transparent 45%), var(--bg);
+  color: var(--text-primary);
+  font-family: "Urbanist", "Avenir Next", "Nunito Sans", "Segoe UI", sans-serif;
+}
+
+.panel {
+  background: var(--bg-soft);
+}
+
+.soft {
+  background: var(--bg-panel);
+}
+
+.card {
+  background: var(--bg-card);
+}
+
+.muted {
+  color: var(--text-secondary);
+}
+
+.task-card {
+  cursor: grab;
+  user-select: none;
+  outline: none;
+}
+
+.task-card:focus,
+.task-card:focus-visible {
+  outline: none;
+}
+
+.task-card.dragging {
+  border-style: solid;
+}
